@@ -1,0 +1,297 @@
+* {
+    font-family: 'Mooli', sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    margin: auto;
+}
+
+
+.banner {
+    background: url("images/messifondo.jpg")center/cover;
+    height: 700px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-position: left;
+}
+
+.banner::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+}
+
+.banner__info {
+    margin-top: -40%;
+    font-size: 20px;
+    padding: 0.3em;
+    position: absolute;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.banner__title {
+    margin-top: 13%;
+    line-height: 1;
+    font-size: 2em;
+    font-family: 'Mooli', sans-serif;
+}
+
+.banner__p {
+    line-height: 2;
+    font-size: 0.9;
+    font-family: 'Mooli', sans-serif;
+}
+
+.nav {
+    background-color: #47edff;
+    text-align: center;
+}
+
+
+.nav__ul {
+    margin: auto;
+    text-align: center;
+}
+
+
+.nav__li {
+    display: inline-block;
+    padding: 14px;
+}
+
+
+.nav__li:hover > a {
+    color: #ffffff;
+}
+
+
+.nav__li:hover  {
+    color: #ffffff;
+}
+
+
+.nav__li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+.nav__li i {
+    box-sizing: border-box;
+    text-align: center;
+    margin-right: 5px;
+}
+
+
+.menu2 img {
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    display: flex;
+}
+
+.menu img {
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+
+
+.container_noticias {
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+}
+
+
+
+.card {
+    padding: 30px;
+    margin: auto;
+    width: 300px; 
+    border: 3px solid #0a0000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 400ms ease;
+  }
+  
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(3%);
+}
+
+.card img {
+    margin-top: 20px;
+    width: 100%;
+    height: 210px;
+  }
+  
+.card .contenido {
+    padding: 15px;
+    text-align: left;
+  }
+
+.card .contenido p{
+    line-height: 1.5;
+    color: #6a6a6a;
+  }
+
+.card .conenido h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+
+.galeria {
+    background: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    padding: 20px;
+}
+
+.imagenes {
+    background: #000000;
+    flex: 0 0 calc(25% - 20px); 
+    overflow: hidden;
+    border: 3px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 300px; 
+    height: 300px; 
+}
+
+.imagenes:hover {
+    width: 400px;
+    height: 400px;
+    transition: 2s;
+}
+
+.imagenes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: inline-block;
+}
+
+footer {
+    background-color: #47edff;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+}
+
+.contacto {
+    font-size: 16px;
+}
+
+.contacto p {
+    margin: 5px 0;
+}
+
+.contacto a {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor-contacto {
+    background: grey;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.form {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: grey;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+input[required],
+textarea[required] {
+    border-color: #000000;
+}
+
+::placeholder {
+    color: black;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.biografia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #787878;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    color: #000205;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+}

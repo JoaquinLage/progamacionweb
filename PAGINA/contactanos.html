@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MessiAz</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/9793ee0d48.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <img src="images/messi.png" alt="">
+        </div>
+        <nav class="nav">
+            <ul class="nav__ul">
+                <li class="nav__li"><i class="fas fa-house"></i><a href="index.html">Inicio</a></li>
+                <li class="nav__li"><i class="fas fa-futbol"></i><a href="messi.html">Sobre Messi</a></li>
+                <li class="nav__li"><i class="fas fa-blog"></i><a href="noticias.html">Noticias</a></li>
+                <li class="nav__li"><i class="fas fa-user-group"></i><a href="galeria.html">Galeria</a></li>
+                <li class="nav__li"><i class="fa-solid fa-phone"></i><a href="contactanos.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenedor-contacto">
+        <h1>Contacto</h1>
+        <form id="form-contacto" action="enviar.php" method="post">
+            <div class="form">
+                <label for="nombre" >Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre" required>
+            </div>
+            <div class="form">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Escriba su apellido"  required>
+            </div>
+            <div class="form">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" placeholder="Escriba su mail" required>
+            </div>
+            <div class="form">
+                <label for="pregunta">Pregunta o Aporte</label>
+                <textarea id="pregunta" name="pregunta"></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+<footer>
+    <div class="contacto">
+        <p>Correo Electrónico: <a href="messi@gmail.com">informacionmessi@gmail.com</a></p>
+        <p>Teléfono: <a href="tel:011-2931-2912">011-2931-2912</a></p>
+        <p>&copy; MessiAz 2023. Todos los derechos reservados.</p>
+    </div>
+</footer>
+</body>
+</html>
